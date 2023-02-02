@@ -1,0 +1,20 @@
+current_sum = float(input())
+coin_counter = 0
+current_sum = int(current_sum * 100)
+coin_counter += current_sum // 200
+current_sum %= 200
+coin_counter += current_sum // 100
+current_sum %= 100
+coin_counter += current_sum // 50
+current_sum %= 50
+coin_counter += current_sum // 20
+current_sum %= 20
+coin_counter += current_sum // 10
+current_sum %= 10
+coin_counter += current_sum // 5
+current_sum %= 5
+coin_counter += current_sum // 2
+current_sum %= 2
+coin_counter += current_sum // 1
+current_sum %= 1
+print(coin_counter)
